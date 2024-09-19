@@ -405,3 +405,156 @@ footer{
 text-align: center;
 padding: 20px 15px;;
 }
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .header .nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner .bannerTextContainer {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner .bannerTextImg {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+
+  .banner .bannerTextImg .Img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .courseContainer .course {
+    flex-basis: 100%;
+  }
+
+  .workContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small devices (landscape phones, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .header .nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner .bannerTextContainer {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner .bannerTextImg {
+    justify-content: center;
+    flex-basis: 100%;
+  }
+
+  .banner .bannerTextImg .Img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .courseContainer .course {
+    flex-basis: 100%;
+  }
+
+  .workContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Medium devices (tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .banner .bannerTextContainer {
+    flex-basis: 50%;
+  }
+
+  .banner .bannerTextImg {
+    flex-basis: 50%;
+  }
+
+  .courseContainer .course {
+    flex-basis: 48%;
+  }
+
+  .workContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner .bannerTextContainer {
+    flex-basis: 60%;
+  }
+
+  .banner .bannerTextImg {
+    flex-basis: 40%;
+  }
+
+  .courseContainer .course {
+    flex-basis: 48%;
+  }
+
+  .workContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner .bannerTextContainer {
+    flex-basis: 60%;
+  }
+
+  .banner .bannerTextImg {
+    flex-basis: 40%;
+  }
+
+  .courseContainer .course {
+    flex-basis: 48%;
+  }
+
+  .workContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
